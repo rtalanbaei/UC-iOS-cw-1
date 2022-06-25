@@ -30,7 +30,7 @@ struct ContentView: View {
                 
                 HStack{
                 Text("8:02")
-                    .font(.largeTitle)
+                    .font(.system(size: 50))
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                     .frame(height: 70.0)
@@ -128,20 +128,21 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                     }.padding()
                     Divider()
+                            .padding(5)
                     HStack{
                         Text("7:50 PM")
                             .font(.title2)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
                         Spacer()
                         Text("العشاء")
                             .font(.title2)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
-                    }.padding()
+                    }.padding(.vertical).frame(height: 40) .background(Color.white)
                     }
                     
-                }.padding()
+                }
     }
         }.ignoresSafeArea()
     }
